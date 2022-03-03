@@ -1,0 +1,29 @@
+<h1>Login.ejs</h1>
+
+<body>
+    <script defer src="/socket.io/socket.io.js"></script>
+    <script defer src="Js/Client.js"></script>
+    <div class="PersonOnline">
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+    </div>
+    <div class="CurrentRooms">
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+    </div>
+    <form action="/createRoom" method="POST">
+        <div>
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="roomName">Room Name</label>
+            <input type="text" id="roomName" name="roomName" required>
+        </div>
+        <button type="button" id="createRoom">Create Room</button>
+    </form>
+</body>

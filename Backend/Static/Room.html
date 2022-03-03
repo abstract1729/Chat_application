@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/Roomstyle2.css">
+    <title>ChatApplication</title>
+</head>
+
+<body>
+    <h1>Your Page</h1>
+    <script defer src="/socket.io/socket.io.js"></script>
+    <script defer src="Js/Client.js"></script>
+    <div class="Online">
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+    </div>
+    <div class="CurrentRooms">
+        <a href="#">About2</a>
+        <a href="#">Services2</a>
+        <a href="#">Clients2</a>
+        <a href="#">Contact2</a>
+    </div>
+    <form action="" id="roomCreation">
+        <div>
+            <label for="roomName">Room Name</label>
+            <input type="text" id="roomName" name="roomName" class="input" required>
+        </div>
+        <button type="button" id="createRoom">Create Room</button>
+    </form>
+
+    <form action="" id="memberAddition">
+        <div>
+            <label for="memberEmail">Member Email</label>
+            <input type="email" id="memberEmail" name="memberEmail" required>
+            <button type="button" id="addMember">Add Member</button>
+        </div>
+    </form>
+    <div class="container"></div>
+    <div class="MessageBox">
+        <label for="Message"></label>
+        <textarea name="Message" id="Message" cols="40" rows="5"></textarea>
+        <button type="click" id="sendButton">Send</button>
+    </div>
+</body>
+
+</html>
